@@ -1,0 +1,137 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background: linear-gradient(36deg ,rgba(255, 10, 10, 0.88),rgba(193, 176, 35, 1),rgba(255, 10, 10, 0.88));
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  width: 800px;
+  min-height: 800px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+  padding: 25px;
+}
+
+h2{
+  text-align: center;
+  color: #fff;
+  font-weight: 700;
+  margin-bottom: 20px;
+  text-decoration: no;
+}
+h6 {
+	display: flex;
+	justify-content: center;
+	
+}
+h6 a{
+	  text-align: center;
+  color: #00294d;
+  text-decoration: none;
+}
+
+
+.input-group {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+#inputElement {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  outline: none;
+  background: rgba(255, 255, 255, 0.15);
+  color: #fff;
+  font-size: 16px;
+  border-bottom: 2px solid #fff;
+}
+
+#inputElement::placeholder {
+  color: #ddd;
+}
+
+.add-button {
+  padding: 10px 15px;
+  background: #00294d;
+  border: none;
+  border-radius: 10px;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.add-button:hover {
+  background: #004080;
+}
+
+.toDoContainer {
+  max-height: 250px;
+  overflow-y: auto;
+  border-top: 2px solid #fff;
+  padding-top: 10px;
+}
+
+/* Beautiful Scrollbar */
+.toDoContainer::-webkit-scrollbar {
+  width: 6px;
+}
+.toDoContainer::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+}
+.toDoContainer::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+p {
+  background: rgba(255, 255, 255, 0.15);
+  padding: 10px;
+  border-radius: 10px;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+p:hover {
+  background: rgba(255, 255, 255, 0.25);
+}
+
+#delete-btn {
+  background: #ff3b3b;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 5px 10px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+#delete-btn:hover {
+  background: #cc0000;
+}
+@media (max-width:700px) {
+.container {
+	width: 360px;
+	min-height: 400px;
+	
+}
+}
